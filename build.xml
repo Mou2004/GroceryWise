@@ -1,0 +1,17 @@
+<project name="GroceryWise" default="run" basedir=".">
+    <property name="src" value="src"/>
+    <property name="bin" value="bin"/>
+
+    <target name="clean">
+        <delete dir="${bin}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${bin}"/>
+        <javac srcdir="${src}" destdir="${bin}"/>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="com.myapp.Main" classpath="${bin}"/>
+    </target>
+</project>
