@@ -90,4 +90,7 @@ public class HomePage extends JFrame implements ActionListener {
             new FindCheapest();
         }
     }
+    public static void displayTable() {
+
+    }
 }
